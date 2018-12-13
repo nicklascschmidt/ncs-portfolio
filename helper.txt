@@ -1,0 +1,15 @@
+Colors
+#157F1F
+#4CB963
+#A0EADE
+#5C6784
+#1D263B
+
+Alternate color scheme
+#ABC4AB
+#A39171
+#DCC9B6
+#727D71
+#6D4C3D
+#9E7D62
+#3F2113

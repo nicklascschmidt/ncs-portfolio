@@ -1,16 +1,42 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-class App extends Component {
+// pages
+import Main from './pages/main';
+import NotFound from './pages/notFound';
+
+// components
+import NavBar from './components/nav/NavBar';
+import Background from './components/background/Background';
+
+// css
+import './App.css';
+import { Container } from 'reactstrap';
+
+// font awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faIgloo, faChair } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faIgloo,faChair);
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <h1>What about this</h1>
-        <h2>And this?</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-    );
+      <Router>
+        <Background mycolor='green'>
+          <NavBar />
+          <Container>
+            <Switch>
+              <Route exact path="/" component={Main} />
+
+              <Route component={NotFound} />
+            </Switch>
+          </Container>
+        </Background>
+      </Router>
+    )
   }
-}
+};
 
 export default App;
+
