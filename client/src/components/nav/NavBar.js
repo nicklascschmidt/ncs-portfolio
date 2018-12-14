@@ -12,7 +12,6 @@ const NavbarCustom = styled(Navbar)`
   color: white;
   position: relative;
   margin: 0 0 20px 0;
-  padding: 40px;
 `;
 
 class NavBar extends React.Component {

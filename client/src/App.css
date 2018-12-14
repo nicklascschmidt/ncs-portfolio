@@ -6,12 +6,17 @@ a {
   color: #74AA6F !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   color: #3F2113;
+  font-family: 'Oswald', sans-serif !important;
+}
+
+h4, h5, h6 {
+  color: white;
   font-family: 'Oswald', sans-serif !important;
 }
 
 p {
   color: #3F2113;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Raleway', sans-serif;
 }
