@@ -1,37 +1,19 @@
 import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap';
 import styled from 'styled-components';
+import NavLink from './NavLink';
 
-// css
 import {
   Navbar,
   Nav,
-  NavItem,
 } from 'reactstrap';
-
-const fontColor = 'white';
 
 const NavbarCustom = styled(Navbar)`
   background-color: #6D4C3D;
-  color: ${fontColor};
+  color: white;
   position: relative;
   margin: 0 0 20px 0;
-  height: 45px;
+  padding: 40px;
 `;
-
-const NavbarBrandCustom = styled.h4`
-  color: ${fontColor};
-  position: absolute;
-  bottom: 0;
-`;
-
-const LinkContainerCustom = styled(LinkContainer)`
-  color: ${fontColor};
-  padding: ${props => props.padding || 0};
-  cursor: pointer;
-  font-family: 'Oswald', sans-serif;
-`;
-
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -45,22 +27,11 @@ class NavBar extends React.Component {
   render() {
     return (
       <NavbarCustom>
-        <LinkContainerCustom to="/" padding='100px 0 0 0'>
-          <NavbarBrandCustom><strong>Nicklas Chen Schmidt</strong></NavbarBrandCustom>
-        </LinkContainerCustom>
+        <NavLink toLink='/' displayTitle='Nicklas Chen Schmidt' brand={true} margin='50px 0 0 0'/>
         <Nav className="ml-auto">
-          <a href='#contact'>
-            <NavItem>Contact2</NavItem>
-          </a>
-          <LinkContainerCustom to="/contact" padding='0 10px'>
-            <NavItem>Contact</NavItem>
-          </LinkContainerCustom>
-          <LinkContainerCustom to="/projects" padding='0 10px'>
-            <NavItem>Projects</NavItem>
-          </LinkContainerCustom>
-          <LinkContainerCustom to="/resume" padding='0 10px'>
-            <NavItem>Resume</NavItem>
-          </LinkContainerCustom>
+          <NavLink toLink='/contact' displayTitle='Contact' />
+          <NavLink toLink='/projects' displayTitle='Projects' />
+          <NavLink toLink='/resume' displayTitle='Resume' />
         </Nav>
       </NavbarCustom>
     )
