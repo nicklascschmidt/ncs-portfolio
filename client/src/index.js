@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
+import 'bootstrap/dist/css/bootstrap.css'; // reactstrap
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-import 'bootstrap/dist/css/bootstrap.css'; // reactstrap
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

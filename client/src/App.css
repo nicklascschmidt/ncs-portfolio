@@ -1,22 +1,21 @@
 body {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
-  color: #74AA6F !important;
+  color: #74AA6F;
 }
 
 h1, h2, h3 {
   color: #3F2113;
-  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Oswald', sans-serif;
 }
 
 h4, h5, h6 {
   color: white;
-  font-family: 'Oswald', sans-serif !important;
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
   color: #3F2113;
-  font-family: 'Raleway', sans-serif;
 }

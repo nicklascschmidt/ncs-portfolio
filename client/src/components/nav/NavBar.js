@@ -15,18 +15,11 @@ const NavbarCustom = styled(Navbar)`
 `;
 
 class NavBar extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-
-    };
-  }
 
   render() {
     return (
       <NavbarCustom>
-        <NavLink toLink='/' displayTitle='Nicklas Chen Schmidt' brand={true} margin='50px 0 0 0'/>
+        <NavLink toLink='/' displayTitle='Nicklas Chen Schmidt' brand={true} margin='0'/>
         <Nav className="ml-auto">
           <NavLink toLink='/contact' displayTitle='Contact' />
           <NavLink toLink='/projects' displayTitle='Projects' />
