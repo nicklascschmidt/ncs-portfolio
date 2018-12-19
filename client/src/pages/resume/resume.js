@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import IconATagComponent from '../../components/icon/icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Brands from '@fortawesome/free-brands-svg-icons';
-import PDFReaderResume from '../../components/pdf/PDFReader';
 
 import {
   Container,
@@ -19,11 +18,6 @@ const JumbotronCustom = styled(Jumbotron)`
   text-align: center;
 `;
 
-const CardPdfCustom = styled(Card)`
-  margin: 32px;
-  height: 1140px;
-`;
-
 const CardCustom = styled(Card)`
   margin: 32px;
 `;
@@ -35,6 +29,11 @@ const CardHeaderCustom = styled(CardHeader)`
 
 const CardBodyCustom = styled(CardBody)`
   color: #3F2113;
+`;
+
+const ImgCustom = styled.img`
+  width: 100%;
+  height: 100%;
 `;
 
 
@@ -56,7 +55,7 @@ class Resume extends React.Component {
         <Container>
           <CardCustom>
             <CardHeaderCustom>
-              <h4>Hyperlinks are accessible here</h4>
+              <h4>Hyperlinks</h4>
             </CardHeaderCustom>
               <CardBodyCustom>
                 <p><strong>Google Drive Resume: </strong>
@@ -69,10 +68,11 @@ class Resume extends React.Component {
                 <p>LinkedIn: <a href='https://www.linkedin.com/in/nicklascschmidt/'>nicklas-chen-schmidt</a></p>
                 <p>ThreadAuction: <a href='https://threadauction.herokuapp.com/'>Application</a> | <a href='https://github.com/nicklascschmidt/threadauction'>GitHub</a></p>
               </CardBodyCustom>
+              <hr></hr>
+              <CardBody>
+                <ImgCustom src='https://i.imgur.com/44Q2ior.jpg' alt='Resume'></ImgCustom>
+              </CardBody>
           </CardCustom>
-          <CardPdfCustom>
-            <PDFReaderResume />
-          </CardPdfCustom>
         </Container>
       </div>
     );
