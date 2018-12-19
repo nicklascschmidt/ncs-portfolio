@@ -1,16 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
-import IconATagComponent from '../../components/icon/icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import * as Brands from '@fortawesome/free-brands-svg-icons';
-
-import {
-  Container,
-  Jumbotron,
-  Card,
-  CardHeader,
-  CardBody,
-} from 'reactstrap';
+import JumbotronComponent from '../../components/jumbotron/Jumbotron';
+import CardComponent from '../../components/card/card';
+import { Container } from 'reactstrap';
 
 const ImageContainer = styled.div`
   border: 2px solid #6D4C3D;
@@ -28,26 +20,6 @@ const ImgCustom = styled.img`
   height: auto;
 `;
 
-const JumbotronCustom = styled(Jumbotron)`
-  background-color: #DCC9B6 !important;
-  color: #3F2113;
-  text-align: center;
-`;
-
-const CardCustom = styled(Card)`
-  margin: 32px;
-`
-
-const CardHeaderCustom = styled(CardHeader)`
-  background-color: #9E7D62 !important;
-  color: white;
-`;
-
-const CardBodyCustom = styled(CardBody)`
-  color: #3F2113;
-`;
-
-
 class Main extends React.Component {
   constructor(props) {
       super(props);
@@ -60,36 +32,18 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <JumbotronCustom>
+        <JumbotronComponent title='Nicklas Chen Schmidt' subtitle='Full Stack Developer'>
           <ImageContainer>
             <ImgCustom src='https://i.imgur.com/rSkhIRj.jpg' alt='Profile Picture'></ImgCustom>
           </ImageContainer>
-          <h1>Nicklas Chen Schmidt</h1>
-          <h3>Full Stack Web Developer</h3>
-          <hr style={{width: '400px', border: '1px solid #74AA6F'}}></hr>
-          <IconATagComponent hrefLink='https://github.com/nicklascschmidt'>
-            <FontAwesomeIcon icon={Brands.faGithub} size='2x' />
-          </IconATagComponent>
-          <IconATagComponent hrefLink='https://www.linkedin.com/in/nicklas-chen-schmidt-7158438a/'>
-            <FontAwesomeIcon icon={Brands.faLinkedin} size='2x' />
-          </IconATagComponent>
-        </JumbotronCustom>
+        </JumbotronComponent>
         <Container>
-          <CardCustom>
-            <CardHeaderCustom>
-              <h5><strong>About</strong></h5>
-            </CardHeaderCustom>
-            <CardBodyCustom>
+          <CardComponent header='About'>
               <p>
                 My name is Nicklas Chen Schmidt, and I’m a full stack developer seeking opportunities in the Bay Area. I’m passionate about building and improving web applications, as well as solving puzzles, learning new concepts, and translating ideas into real world applications.
               </p>
-            </CardBodyCustom>
-          </CardCustom>
-          <CardCustom>
-            <CardHeaderCustom>
-              <h5><strong>My Story</strong></h5>
-            </CardHeaderCustom>
-            <CardBodyCustom>
+          </CardComponent>
+          <CardComponent header='My Story'>
               <p>
                 Recently, I completed a rigorous 6-month full stack web development bootcamp at the <a href='https://bootcamp.uclaextension.edu/coding/' target='_blank' rel="noopener noreferrer">UCLA Coding Bootcamp</a> (in-person classes). The program dives into HTML, CSS, JavaScript, jQuery, Node.js, React.js, Express, MySQL, MongoDB, Bootstrap, Responsive Design, Git, Heroku, AJAX, JSON, and APIs. Projects are completed both individually and in groups, giving students comprehensive experience with pair programming and cooperative git workflows.
               </p>
@@ -99,8 +53,7 @@ class Main extends React.Component {
               <p>
                 At heart, I’m a creator and a problem solver. The Bootcamp provided me with a solid foundation to start building, keep problem-solving, and constantly continue learning. For me, the journey is just beginning!
               </p>
-            </CardBodyCustom>
-          </CardCustom>
+          </CardComponent>
         </Container>
       </div>
     );
