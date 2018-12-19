@@ -45,7 +45,7 @@ class Resume extends React.Component {
     return (
       <div>
         <JumbotronCustom>
-          <h1>Resume</h1>
+          <h1>Resume (dev server)!!</h1>
           <hr style={{width: '400px', border: '1px solid #74AA6F'}}></hr>
           <IconATagComponent hrefLink='https://github.com/nicklascschmidt'>
             <FontAwesomeIcon icon={Brands.faGithub} size='2x' />
@@ -75,6 +75,7 @@ class Resume extends React.Component {
             <PDFViewer
               backend={PDFJSBackend}
               src='/resume.pdf'
+              // src='https://www.pdf.investintech.com/preview-frames.php?id=WGMxUkVjRVMxVTZqTTBFZ25yOFhwbEY0SWZDNmlCbERtZE1xVGRSWkdlZGdnQVk4OExHeEVSOVpEaG55K2FZT1NpZmZhNnYwb3dZYlBmbWtrbmxJUk5jNTNQbXd2WVFHZGJMbWluZUJCNENVZU4vMGo0RzUwN2M4Z1Nrb0o0OXI='
             />
           </CardPdfCustom>
         </Container>
