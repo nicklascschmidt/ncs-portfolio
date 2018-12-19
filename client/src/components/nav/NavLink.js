@@ -8,14 +8,23 @@ const LinkContainerCustom = styled(LinkContainer)`
   font-family: 'Oswald', sans-serif;
   margin: ${props => props.margin || '0 10px'};
   cursor: pointer;
+  :hover {
+    color: #74AA6F;
+  }
 `;
+
+const BrandH4 = styled.h4`
+  :hover {
+    color: #74AA6F;
+  }
+`
 
 class NavLink extends React.Component {
   render() {
     return (
       <LinkContainerCustom to={this.props.toLink}>
         {this.props.brand ? 
-        <NavbarBrand><strong><h4 style={{marginBottom: 0, color: 'white'}}>{this.props.displayTitle}</h4></strong></NavbarBrand>
+        <NavbarBrand><BrandH4 style={{marginBottom: 0}}>{this.props.displayTitle}</BrandH4></NavbarBrand>
         :
         <NavItem>{this.props.displayTitle}</NavItem>
         }

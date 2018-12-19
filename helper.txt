@@ -8,8 +8,12 @@ Colors
 Alternate color scheme
 #ABC4AB
 #A39171
-#DCC9B6
+#DCC9B6 - lighter
 #727D71
 #6D4C3D
-#9E7D62
+#9E7D62 - darker
 #3F2113
+
+/* fallback | pineapple - edited color scheme */
+
+

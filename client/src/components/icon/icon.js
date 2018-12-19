@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const IconATag = styled.a`
   display: inline-block;
-  margin: 10px;
+  margin: ${props => props.margin || '10px'};
 `;
 
-class IconATagComponent extends React.Component {
+class IconATagComponent extends React.Component {  
   render() {
     return (
       <IconATag href={this.props.hrefLink} target='_blank' rel="noopener noreferrer">
