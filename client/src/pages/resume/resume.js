@@ -74,7 +74,7 @@ class Resume extends React.Component {
           <CardPdfCustom>
             <PDFViewer
               backend={PDFJSBackend}
-              src='/resume-12.18.18.pdf'
+              src='/resume.pdf'
             />
           </CardPdfCustom>
         </Container>
