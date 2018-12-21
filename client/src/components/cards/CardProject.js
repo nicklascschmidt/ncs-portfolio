@@ -32,15 +32,15 @@ class CardProjectComponent extends React.Component {
     return (
       <CardCustom>
         <CardHeaderCustom>
-          <CardTitle>{this.props.title}</CardTitle>
-          <hr style={{width: '90%', border: '1px solid #74AA6F'}} />
-          <CardSubtitle>{this.props.subTitle}</CardSubtitle>
+          <CardTitle><h4>{this.props.title}</h4></CardTitle>
+          <hr style={{width: '100%', border: '1px solid #74AA6F'}} />
+          <CardSubtitle><h5>{this.props.subTitle}</h5></CardSubtitle>
         </CardHeaderCustom>
         <CardImg width="100%" src={this.props.imgSrc} alt="Project Image" />
         <CardBodyCustom>
           <CardText>{this.props.projectDescription}</CardText>
-          <CardLink href={this.props.projectLink} target='_blank'>Card Link</CardLink>
-          <CardLink href={this.props.githubLink} target='_blank'>Another Link</CardLink>
+          <CardLink href={this.props.projectLink} target='_blank'>Live Site</CardLink>
+          <CardLink href={this.props.githubLink} target='_blank'>GitHub</CardLink>
         </CardBodyCustom>
       </CardCustom>
     )
