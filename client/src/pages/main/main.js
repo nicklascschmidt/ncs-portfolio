@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import JumbotronComponent from '../../components/jumbotron/Jumbotron';
-import CardComponent from '../../components/card/card';
+import CardComponent from '../../components/cards/Card';
 import { Container } from 'reactstrap';
 
 const ImageContainer = styled.div`

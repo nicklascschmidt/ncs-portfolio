@@ -21,7 +21,7 @@ class JumbotronComponent extends React.Component {
           {this.props.children}
           <h1>{this.props.title}</h1>
           {this.props.subtitle ? <h3>{this.props.subtitle}</h3> : null }
-          <hr style={{width: '400px', border: '1px solid #74AA6F'}}></hr>
+          <hr style={{width: '400px', border: '1px solid #74AA6F'}} />
           <IconATagComponent hrefLink='https://github.com/nicklascschmidt'>
             <FontAwesomeIcon icon={Brands.faGithub} size='2x' />
           </IconATagComponent>

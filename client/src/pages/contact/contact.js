@@ -1,6 +1,6 @@
 import React from "react";
 import JumbotronComponent from '../../components/jumbotron/Jumbotron';
-import CardComponent from '../../components/card/card';
+import CardComponent from '../../components/cards/Card';
 import ContactForm from '../../components/contactForm/ContactForm';
 import { Container } from 'reactstrap';
 

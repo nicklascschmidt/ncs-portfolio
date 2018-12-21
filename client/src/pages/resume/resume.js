@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import IconATagComponent from '../../components/icon/icon';
 import JumbotronComponent from '../../components/jumbotron/Jumbotron';
-import CardComponent from '../../components/card/card';
+import CardComponent from '../../components/cards/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Brands from '@fortawesome/free-brands-svg-icons';
 import { Container } from 'reactstrap';
