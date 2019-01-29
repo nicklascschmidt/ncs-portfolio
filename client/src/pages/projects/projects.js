@@ -13,10 +13,10 @@ class Projects extends React.Component {
           <Row>
             <ColComponent>
               <CardProjectComponent
-                title='Portfolio Site (this one!)' subTitle='Full stack React app with a Node backend, launched on AWS.'
-                imgSrc='https://i.imgur.com/lg5PHiJ.png'
-                projectDescription='Portfolio site with Homepage, Contact, Projects, and Resume pages.'
-                projectLink='http://www.nicklaschenschmidt.com/' githubLink='https://github.com/nicklascschmidt/ncs-portfolio'>
+                title='Movie Master' subTitle='Full stack HTML/CSS/JS/jQuery app with a Node backend and a MySQL database.'
+                imgSrc='https://i.imgur.com/NPOxEPY.png'
+                projectDescription='Users log into an account, then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.'
+                projectLink='https://movie-master-app.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/movie-master'>
               </CardProjectComponent>
             </ColComponent>
             <ColComponent>
@@ -29,12 +29,12 @@ class Projects extends React.Component {
             </ColComponent>
           </Row>
           <Row>
-            <ColComponent>
+          <ColComponent>
               <CardProjectComponent
-                title='Movie Master' subTitle='Full stack HTML/CSS/JS/jQuery app with a Node backend and a MySQL database.'
-                imgSrc='https://i.imgur.com/JTvfRZt.png'
-                projectDescription='Users log into an account, then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.'
-                projectLink='https://movie-master-app.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/movie-master'>
+                title='Portfolio Site (this one!)' subTitle='Full stack React app with a Node backend, launched on AWS.'
+                imgSrc='https://i.imgur.com/lg5PHiJ.png'
+                projectDescription='Portfolio site with Homepage, Contact, Projects, and Resume pages.'
+                projectLink='http://www.nicklaschenschmidt.com/' githubLink='https://github.com/nicklascschmidt/ncs-portfolio'>
               </CardProjectComponent>
             </ColComponent>
             <ColComponent>

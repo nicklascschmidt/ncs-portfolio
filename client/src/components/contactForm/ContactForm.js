@@ -22,7 +22,7 @@ class ContactForm extends React.Component {
   };
 
   handleChange = event => {
-    const { name, value } = event.target;
+    let { name, value } = event.target;
     this.setState({
       [name]: value
     });
@@ -31,7 +31,7 @@ class ContactForm extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const { mailTo, emailName, emailDomain, submitterSubject, submitterMessage } = this.state;
+    let { mailTo, emailName, emailDomain, submitterSubject, submitterMessage } = this.state;
     this.setState({
       completeMailTo: `${mailTo}:${emailName}@${emailDomain}?subject=${submitterSubject}&body=${submitterMessage}`
     }, () => {    
