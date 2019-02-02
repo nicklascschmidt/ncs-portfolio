@@ -3,103 +3,46 @@ import JumbotronComponent from '../../components/jumbotron/Jumbotron';
 import CardProjectComponent from '../../components/cards/CardProject';
 import { Container, Row } from 'reactstrap';
 import ColComponent from '../../components/grid/ColProject';
+import { projectArray } from './projectArray';
 
 class Projects extends React.Component {
+  
+  showCards = () => {
+    let displayProjectArray = [];
+    for (let i=0; i < projectArray.length; i+=2) {
+      displayProjectArray.push(
+        <Row>
+          <ColComponent>
+            <CardProjectComponent
+              title={projectArray[i].title}
+              subTitle={projectArray[i].subTitle}
+              imgSrc={projectArray[i].imgSrc}
+              projectDescription={projectArray[i].projectDescription}
+              projectLink={projectArray[i].projectLink}
+              githubLink={projectArray[i].githubLink} />
+          </ColComponent>
+          {projectArray[i+1] ? 
+          <ColComponent>
+            <CardProjectComponent
+              title={projectArray[i+1].title}
+              subTitle={projectArray[i+1].subTitle}
+              imgSrc={projectArray[i+1].imgSrc}
+              projectDescription={projectArray[i+1].projectDescription}
+              projectLink={projectArray[i+1].projectLink}
+              githubLink={projectArray[i+1].githubLink} />
+          </ColComponent> : null}
+        </Row>
+      )
+    }
+    return displayProjectArray
+  }
+
   render() {
     return (
       <div>
         <JumbotronComponent title='Projects' />
         <Container>
-          <Row>
-            <ColComponent>
-              <CardProjectComponent
-                title='Movie Master' subTitle='Full stack HTML/CSS/JS/jQuery app with a Node backend and a MySQL database.'
-                imgSrc='https://i.imgur.com/NPOxEPY.png'
-                projectDescription='Users log into an account, then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.'
-                projectLink='https://movie-master-app.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/movie-master'>
-              </CardProjectComponent>
-            </ColComponent>
-            <ColComponent>
-              <CardProjectComponent
-                title='ThreadAuction' subTitle='Full stack React app with a Node backend and MySQL DB.'
-                imgSrc='https://i.imgur.com/Eme9QgV.png'
-                projectDescription='Ecommerce site with an auction system and user authentication. Products are displayed onsite with product details and auction information. Auctions expire one week after posting.'
-                projectLink='https://threadauction.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/threadauction'>
-              </CardProjectComponent>
-            </ColComponent>
-          </Row>
-          <Row>
-          <ColComponent>
-              <CardProjectComponent
-                title='Portfolio Site (this one!)' subTitle='Full stack React app with a Node backend, launched on AWS.'
-                imgSrc='https://i.imgur.com/lg5PHiJ.png'
-                projectDescription='Portfolio site with Homepage, Contact, Projects, and Resume pages.'
-                projectLink='http://www.nicklaschenschmidt.com/' githubLink='https://github.com/nicklascschmidt/ncs-portfolio'>
-              </CardProjectComponent>
-            </ColComponent>
-            <ColComponent>
-              <CardProjectComponent
-                title='Parks and Rec Clicky Game' subTitle='React front-end application.'
-                imgSrc='https://i.imgur.com/SgCEARn.png'
-                projectDescription='Game where users click on pictures to increment their score, as long as they don’t click the same character twice.'
-                projectLink='https://clicky-game-parks-and-rec.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/clicky-game-app'>
-              </CardProjectComponent>
-            </ColComponent>
-          </Row>
-          <Row>
-            <ColComponent>
-              <CardProjectComponent
-                title='Lord of the Rings Hangman' subTitle='HTML/CSS/JS/jQuery application.'
-                imgSrc='https://i.imgur.com/8Sk4qtX.jpg'
-                projectDescription='Users guess letters in the word by typing and win if they guess all the correct letters before getting five wrong.'
-                projectLink='https://hangman-lotr.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/Word-Guess-Game'>
-              </CardProjectComponent>
-            </ColComponent>
-            <ColComponent>
-              <CardProjectComponent
-                title='Mongo Scrape Reductress' subTitle='Full stack HTML/CSS/JS/jQuery app with a Node backend and a MongoDB database.'
-                imgSrc='https://i.imgur.com/5wEpBs3.png'
-                projectDescription='Users click a button to scrape Reductress.com popular articles page and can leave notes for each article. Notes are stored in the DB and are accessible from anywhere.'
-                projectLink='https://mongo-scrape-app-reductress.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/mongo-scrape-app'>
-              </CardProjectComponent>
-            </ColComponent>
-          </Row>
-          <Row>
-            <ColComponent>
-              <CardProjectComponent
-                title='Star Wars Trivia Game' subTitle='HTML/CSS/JS/jQuery application with a timer component.'
-                imgSrc='https://i.imgur.com/NZsO0sH.png'
-                projectDescription='Users answer a series of simple questions about Star Wars with 10 seconds to answer each question.'
-                projectLink='https://star-wars-trivia.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/TriviaGame'>
-              </CardProjectComponent>
-            </ColComponent>
-            <ColComponent>
-              <CardProjectComponent
-                title='Gif-tastic' subTitle='HTML/CSS/JS/jQuery app making AJAX calls to the Giphy API.'
-                imgSrc='https://i.imgur.com/qU04swl.png'
-                projectDescription='Users can click buttons to show GIFs of the item clicked, and can add clickable buttons for anything else via a text input.'
-                projectLink='https://giftastic-app.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/GifTastic'>
-              </CardProjectComponent>
-            </ColComponent>
-          </Row>
-          <Row>
-            <ColComponent>
-              <CardProjectComponent
-                title='Train Scheduler' subTitle='HTML/CSS/JS/jQuery application using Moment.js'
-                imgSrc='https://i.imgur.com/ScZrp6E.png'
-                projectDescription='Users submit train schedule information and the application lists the next train, among other information.'
-                projectLink='https://train-scheduler-basic-app.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/Train-Scheduler'>
-              </CardProjectComponent>
-            </ColComponent>
-            <ColComponent>
-              <CardProjectComponent
-                title='Dim Sum Collector' subTitle='HTML/CSS/JS/jQuery application'
-                imgSrc='https://i.imgur.com/CL6D0L1.png'
-                projectDescription='Users try to match the given $ amount by clicking on foods, which increments the bill.'
-                projectLink='https://dim-sum-collector-game.herokuapp.com/' githubLink='https://github.com/nicklascschmidt/dim-sum-collector'>
-              </CardProjectComponent>
-            </ColComponent>
-          </Row>
+          {this.showCards()}
         </Container>
       </div>
     )

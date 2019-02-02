@@ -7,15 +7,12 @@ import {
   CardText,
   CardBody,
   CardLink,
-  CardTitle,
-  CardSubtitle,
   CardHeader
 } from 'reactstrap';
 
 const CardCustom = styled(Card)`
   display: inline-block;
   margin: ${props => props.margin || '0'};
-  /* width: ${props => props.width || '300px'} */
 `;
 
 const CardHeaderCustom = styled(CardHeader)`
@@ -32,9 +29,9 @@ class CardProjectComponent extends React.Component {
     return (
       <CardCustom>
         <CardHeaderCustom>
-          <CardTitle><h4>{this.props.title}</h4></CardTitle>
+          <h4><a href={this.props.projectLink} target='_blank' style={{color:'white'}}>{this.props.title}</a></h4>
           <hr style={{width: '100%', border: '1px solid #74AA6F'}} />
-          <CardSubtitle><h5>{this.props.subTitle}</h5></CardSubtitle>
+          <h5>{this.props.subTitle}</h5>
         </CardHeaderCustom>
         <CardImg width="100%" src={this.props.imgSrc} alt="Project Image" />
         <CardBodyCustom>
