@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { NavItem, NavbarBrand } from 'reactstrap';
 
 const LinkContainerCustom = styled(LinkContainer)`
-  font-family: 'Oswald', sans-serif;
   margin: ${props => props.margin || '0 10px'};
   cursor: pointer;
   :hover {
