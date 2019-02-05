@@ -1,10 +1,9 @@
 import React from "react";
 import styled from 'styled-components';
 import IconATagComponent from '../icon/icon';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as Brands from '@fortawesome/free-brands-svg-icons';
-
 import { Jumbotron } from 'reactstrap';
+import { FaGithub,FaLinkedin,FaFileAlt } from "react-icons/fa";
+
 
 const JumbotronCustom = styled(Jumbotron)`
   background-color: #DCC9B6 !important;
@@ -23,10 +22,13 @@ class JumbotronComponent extends React.Component {
           {this.props.subtitle ? <h3>{this.props.subtitle}</h3> : null }
           <hr style={{width: '400px', border: '1px solid #74AA6F'}} />
           <IconATagComponent hrefLink='https://github.com/nicklascschmidt'>
-            <FontAwesomeIcon icon={Brands.faGithub} size='2x' />
+            <FaGithub size='2em'/>
           </IconATagComponent>
           <IconATagComponent hrefLink='https://www.linkedin.com/in/nicklascschmidt/'>
-            <FontAwesomeIcon icon={Brands.faLinkedin} size='2x' />
+            <FaLinkedin size='2em'/>
+          </IconATagComponent>
+          <IconATagComponent hrefLink='https://www.dropbox.com/s/c939lo0aeov3exs/NCS_Resume_Feb%202019.docx?dl=0'>
+            <FaFileAlt size='2em'/>
           </IconATagComponent>
         </JumbotronCustom>
         </div>

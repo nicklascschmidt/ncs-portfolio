@@ -10,7 +10,7 @@ const IconATag = styled.a`
 class IconATagComponent extends React.Component {  
   render() {
     return (
-      <IconATag href={this.props.hrefLink} target='_blank' rel="noopener noreferrer">
+      <IconATag href={this.props.hrefLink} margin={this.props.margin} target='_blank' rel="noopener noreferrer">
         {this.props.children}
       </IconATag>
     );

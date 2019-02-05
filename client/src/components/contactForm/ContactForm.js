@@ -9,7 +9,7 @@ class ContactForm extends React.Component {
         submitterSubject: '',
         submitterMessage: '',
         mailTo: 'mailto',
-        emailName: 'nicklas.c.schmidt.fwd',
+        emailName: 'nicklas.c.schmidt',
         emailDomain: 'gmail.com',
         completeMailTo: null,
       };
@@ -45,15 +45,13 @@ class ContactForm extends React.Component {
       <Form>
         <FormGroup>
           <Label for="formSubject">Subject</Label>
-          <Input type="text" name="submitterSubject" id="formSubject" placeholder="subject..." value={this.state.submitterSubject} onChange={event => this.handleChange(event)} />
+          <Input type="text" name="submitterSubject" id="formSubject" placeholder="ex. Interview Scheduling" value={this.state.submitterSubject} onChange={event => this.handleChange(event)} />
         </FormGroup>
         <FormGroup>
           <Label for="formMessage">Message</Label>
-          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="message..." value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
+          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. We love your awesome portfolio site and want to hire you asap!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
         </FormGroup>
-        {/* <a href={this.state.completeMailTo}> */}
-          <Button style={{backgroundColor: '#74AA6F', borderColor: '#74AA6F'}} onClick={this.handleSubmit}><strong>Submit*</strong></Button>
-        {/* </a> */}
+        <Button style={{backgroundColor: '#74AA6F', borderColor: '#74AA6F'}} onClick={this.handleSubmit}><strong>Submit*</strong></Button>
         <FormText color="muted">
           *submit will open external default mail client
         </FormText>

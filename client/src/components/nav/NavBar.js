@@ -14,14 +14,14 @@ const NavbarCustom = styled(Navbar)`
   position: relative;
   margin: 0 0 20px 0;
 `;
-const ATagCustom = styled.a`
-  color: white;
-  margin: 0 10px;
-  :hover {
-    color: #74AA6F;
-    text-decoration-line: none;
-  }
-`;
+// const ATagCustom = styled.a`
+//   color: white;
+//   margin: 0 10px;
+//   :hover {
+//     color: #74AA6F;
+//     text-decoration-line: none;
+//   }
+// `;
 
 
 class NavBar extends React.Component {
@@ -33,8 +33,8 @@ class NavBar extends React.Component {
         <Nav className="ml-auto">
           <NavLink toLink='/contact' displayTitle='Contact' />
           <NavLink toLink='/projects' displayTitle='Projects' />
-          {/* <NavLink toLink='/resume' displayTitle='Resume' /> */}
-          <ATagCustom href='https://www.dropbox.com/s/cpjug9annnph9kj/Resume_Feb%202019.docx?dl=0' target='_blank' rel="noopener noreferrer">Resume</ATagCustom>
+          <NavLink toLink='/resume' displayTitle='Resume' />
+          {/* <ATagCustom href='https://www.dropbox.com/s/c939lo0aeov3exs/NCS_Resume_Feb%202019.docx?dl=0' target='_blank' rel="noopener noreferrer">Resume</ATagCustom> */}
         </Nav>
       </NavbarCustom>
     )
