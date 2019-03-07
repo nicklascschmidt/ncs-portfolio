@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import IconATagComponent from '../icon/icon';
 import { Jumbotron } from 'reactstrap';
 import { FaGithub,FaLinkedin,FaFileAlt } from "react-icons/fa";
-
+import { resumeDropboxLink } from '../../pages/resume/resumeSource';
 
 const JumbotronCustom = styled(Jumbotron)`
   background-color: #DCC9B6 !important;
@@ -12,7 +12,6 @@ const JumbotronCustom = styled(Jumbotron)`
 `;
 
 class JumbotronComponent extends React.Component {
-
   render() {
     return (
       <div>
@@ -27,7 +26,7 @@ class JumbotronComponent extends React.Component {
           <IconATagComponent hrefLink='https://www.linkedin.com/in/nicklascschmidt/'>
             <FaLinkedin size='2em'/>
           </IconATagComponent>
-          <IconATagComponent hrefLink='https://www.dropbox.com/s/c939lo0aeov3exs/NCS_Resume_Feb%202019.docx?dl=0'>
+          <IconATagComponent hrefLink={resumeDropboxLink}>
             <FaFileAlt size='2em'/>
           </IconATagComponent>
         </JumbotronCustom>
