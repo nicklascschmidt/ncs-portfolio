@@ -11,26 +11,32 @@ const JumbotronCustom = styled(Jumbotron)`
   text-align: center;
 `;
 
+const CustomHr = styled.hr`
+  width: 100%;
+  border: 1px solid #74AA6F;
+  @media (min-width: 576px) {
+    width: 400px;
+  }
+`;
+
 class JumbotronComponent extends React.Component {
   render() {
     return (
-      <div>
-        <JumbotronCustom>
-          {this.props.children}
-          <h1>{this.props.title}</h1>
-          {this.props.subtitle ? <h3>{this.props.subtitle}</h3> : null }
-          <hr style={{width: '400px', border: '1px solid #74AA6F'}} />
-          <IconATagComponent hrefLink='https://github.com/nicklascschmidt'>
-            <FaGithub size='2em'/>
-          </IconATagComponent>
-          <IconATagComponent hrefLink='https://www.linkedin.com/in/nicklascschmidt/'>
-            <FaLinkedin size='2em'/>
-          </IconATagComponent>
-          <IconATagComponent hrefLink={resumeDropboxLink}>
-            <FaFileAlt size='2em'/>
-          </IconATagComponent>
-        </JumbotronCustom>
-        </div>
+      <JumbotronCustom>
+        {this.props.children}
+        <h1>{this.props.title}</h1>
+        {this.props.subtitle ? <h3>{this.props.subtitle}</h3> : null }
+        <CustomHr />
+        <IconATagComponent hrefLink='https://github.com/nicklascschmidt'>
+          <FaGithub size='2em'/>
+        </IconATagComponent>
+        <IconATagComponent hrefLink='https://www.linkedin.com/in/nicklascschmidt/'>
+          <FaLinkedin size='2em'/>
+        </IconATagComponent>
+        <IconATagComponent hrefLink={resumeDropboxLink}>
+          <FaFileAlt size='2em'/>
+        </IconATagComponent>
+      </JumbotronCustom>
     );
   }
 }
