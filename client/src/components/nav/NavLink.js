@@ -16,14 +16,14 @@ const BrandH4 = styled.h4`
   :hover {
     color: #74AA6F;
   }
-`
+`;
 
 class NavLink extends React.Component {
   render() {
     return (
       <LinkContainerCustom to={this.props.toLink}>
         {this.props.brand ? 
-        <NavbarBrand><BrandH4 style={{marginBottom: 0}}>{this.props.displayTitle}</BrandH4></NavbarBrand>
+        <NavbarBrand><BrandH4>{this.props.displayTitle}</BrandH4></NavbarBrand>
         :
         <NavItem>{this.props.displayTitle}</NavItem>
         }

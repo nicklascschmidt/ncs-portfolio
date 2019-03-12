@@ -2,7 +2,7 @@ const projectArray = [
   {
     title:'Movie Master',
     subTitle:'Full stack HTML/CSS/JS/jQuery app with a Node backend and a MySQL database.',
-    imgSrc:'https://i.imgur.com/NPOxEPY.png',
+    imgSrc:'https://i.imgur.com/41KNuMj.png',
     projectDescription:'Users log into an account, then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.',
     projectLink:'https://movie-master-app.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/movie-master'

@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 
 const CardCustom = styled(Card)`
-  margin: ${props => props.margin || '10px 0'};
+  margin: ${props => props.margin || '0 0 10px 0'};
   width: ${props => props.width || ''};
 `;
 

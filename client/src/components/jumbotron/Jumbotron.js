@@ -2,18 +2,20 @@ import React from "react";
 import styled from 'styled-components';
 import IconATagComponent from '../icon/icon';
 import { Jumbotron } from 'reactstrap';
-import { FaGithub,FaLinkedin,FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import { resumeDropboxLink } from '../../pages/resume/resumeSource';
 
 const JumbotronCustom = styled(Jumbotron)`
-  background-color: #DCC9B6 !important;
+  background-color: #DCC9B6;
   color: #3F2113;
   text-align: center;
 `;
 
 const CustomHr = styled.hr`
   width: 100%;
-  border: 1px solid #74AA6F;
+  border: none;
+  height: 2px;
+  background-color: #74AA6F;
   @media (min-width: 576px) {
     width: 400px;
   }
