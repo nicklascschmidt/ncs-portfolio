@@ -1,11 +1,14 @@
-import styled from 'styled-components';
-import leaves from './leaves.png';
+import React, { Component } from 'react';
+require('./background.scss');
 
-const Background = styled.div`
-  background: url(${leaves}) repeat;
-  min-height: 100vh;
-  overflow-y: scroll;
-`;
+class Background extends Component {
+  render() {
+    return (
+      <div className='background-style'>
+        {this.props.children}
+      </div>
+    )
+  }
+}
 
 export default Background;
-

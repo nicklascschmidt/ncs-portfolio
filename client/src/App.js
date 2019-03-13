@@ -12,17 +12,16 @@ import NotFound from './pages/notFound';
 import NavBar from './components/nav/NavBar';
 import Background from './components/background/Background';
 
-// css
-import './App.css';
+// style
+import './style/App.scss';
 import { Container } from 'reactstrap';
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <Background mycolor='green'>
+        <Background>
           <NavBar />
-          <Container>
             <Switch>
               <Route exact path="/" component={Main} />
               <Route exact path="/contact" component={Contact} />
@@ -31,7 +30,6 @@ class App extends React.Component {
 
               <Route component={NotFound} />
             </Switch>
-          </Container>
         </Background>
       </Router>
     )

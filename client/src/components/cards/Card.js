@@ -12,11 +12,6 @@ const CardCustom = styled(Card)`
   width: ${props => props.width || ''};
 `;
 
-const CardHeaderCustom = styled(CardHeader)`
-  background-color: #9E7D62;
-  color: white;
-`;
-
 const CardBodyCustom = styled(CardBody)`
   color: #3F2113;
   text-align: ${props => props.align || ''};
@@ -26,9 +21,9 @@ class CardComponent extends React.Component {
   render() {
     return (
       <CardCustom margin={this.props.margin} width={this.props.width}>
-        <CardHeaderCustom>
+        <CardHeader className='card-header-style'>
           <h5>{this.props.header}</h5>
-        </CardHeaderCustom>
+        </CardHeader>
         <CardBodyCustom align={this.props.align}>
           {this.props.children}
         </CardBodyCustom>
