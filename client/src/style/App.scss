@@ -7,60 +7,30 @@ html, body, #root, .App {
 }
 
 body {
-  font: {
-    family: 'Raleway', sans-serif;
-    // size: 30em;
-    // weight: bold;
-  }
+  font: { family: 'Raleway', sans-serif; }
 }
 
-a {
-  color: $link-color;
-  :hover {
-    color: $body-text-color;
-  }
-}
+a { color: $link-color; }
+a:hover { color: $body-text-color; }
 
 h1, h2, h3, h4, h5, h6 {
   .header-style {
     color: $body-text-color;
   }
   .card-style {
-    color: white;
+    color: $background-color;
   }
   font-family: 'Oswald', sans-serif;
   margin: 0;
 }
 
-p {
-  color: $body-text-color;
-}
+p { color: $body-text-color; }
 
-.navbar-style {
-  background-color: $nav-color;
-  color: white;
-}
-
-.jumbotron-style {
-  background-color: $jumbotron-color;
-  padding: 1rem;
-  margin: 0 0 1rem 0;
-  color: #3F2113;
-  text-align: center;
-}
-
-.hr-jumbotron {
+hr {
+  height: 1px;
   width: 100%;
   border: none;
-  height: 2px;
-  background-color: #74AA6F;
-  @media (min-width: 576px) {
-    width: 400px;
-  }
-}
-
-.card-header-style {
-  background-color: $card-header-color;
+  background-color: $hr-color;
 }
 
 /* For different sized images on a carousel */

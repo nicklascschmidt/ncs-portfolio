@@ -14,7 +14,6 @@ import Background from './components/background/Background';
 
 // style
 import './style/App.scss';
-import { Container } from 'reactstrap';
 
 class App extends React.Component {
   render() {

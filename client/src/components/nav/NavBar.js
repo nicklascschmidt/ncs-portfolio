@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import NavLink from './NavLink';
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import './nav-styles.scss';
 
 import {
   Collapse,
@@ -9,22 +9,6 @@ import {
   NavbarToggler,
   Nav,
 } from 'reactstrap';
-
-// const ATagCustom = styled.a`
-//   color: white;
-//   margin: 0 10px;
-//   :hover {
-//     color: #74AA6F;
-//     text-decoration-line: none;
-//   }
-// `;
-
-const ToggleIconContainer = styled.div`
-  color: white;
-  display: 'flex';
-  justify-content: center;
-  align-items: center;
-`;
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -43,11 +27,9 @@ class NavBar extends React.Component {
   render() {
     return (
       <Navbar expand="sm" className='navbar-style'>
-        <NavLink toLink='/' displayTitle='Nicklas Chen Schmidt' brand={true} margin='0'/>
-        <NavbarToggler onClick={this.toggle}>
-          <ToggleIconContainer>
-            <FaBars />
-          </ToggleIconContainer>
+        <NavLink toLink='/' displayTitle='NCS' brand={true}/>
+        <NavbarToggler onClick={this.toggle} className='toggle-icon-container'>
+          {this.state.isOpen ? <FaTimes /> : <FaBars />}
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>

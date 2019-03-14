@@ -10,7 +10,7 @@ const ColCustom = styled(Col)`
 class ColComponent extends React.Component {
   render() {
     return (
-      <ColCustom xs="12" sm='12' md={this.props.md} lg={this.props.lg} xl={this.props.xl} margin={this.props.margin} width={this.props.width}>
+      <ColCustom xs='12' sm='12' md={this.props.md} lg={this.props.lg} xl={this.props.xl} margin={this.props.margin} width={this.props.width}>
         {this.props.children}
       </ColCustom>
     )

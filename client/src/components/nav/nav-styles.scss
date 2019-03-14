@@ -1,0 +1,21 @@
+@import '../../style/variables.scss';
+
+.navbar-style {
+  color: $nav-font;
+  background-color: $nav-color;
+  .link-container-style {
+    cursor: pointer;
+    h4 { color: $nav-font; }
+    h4:hover { color: $link-color; }
+  }
+  .link-container-style:hover { color: $link-color; }
+}
+
+.toggle-icon-container {
+  color: $nav-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-icon-container:hover { color: $link-color; }
+

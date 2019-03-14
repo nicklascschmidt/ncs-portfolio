@@ -1,0 +1,12 @@
+@import '../../style/variables.scss';
+
+.jumbotron-style {
+  background-color: $jumbotron-color;
+  box-shadow: 0px 1px 3px 0px $jumbotron-color;
+  text-align: center;
+}
+
+hr.hr-jumbotron {
+  height: 2px;
+  width: 400px;
+}

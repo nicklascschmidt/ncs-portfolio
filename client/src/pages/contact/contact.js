@@ -12,7 +12,7 @@ class Contact extends React.Component {
         <JumbotronComponent title='Contact'/>
         <Container>
           <Row>
-            <ColComponent md='12' lg='4' margin='10px 0'>
+            <ColComponent md='12' lg='4'>
               <CardComponent header='Contact Info'>
                 <p>Email: <a href='mailto:nicklas.c.schmidt@gmail.com'>nicklas.c.schmidt@gmail.com</a></p>
                 <p>Github: <a href='https://github.com/nicklascschmidt' target='_blank' rel="noopener noreferrer">nicklascschmidt</a></p>
@@ -20,7 +20,7 @@ class Contact extends React.Component {
                 <p>Phone number: <img src='https://i.imgur.com/fY5GrcF.jpg' alt='see resume for #' height='30px' style={{borderRadius:'10px'}}/></p>
               </CardComponent>
               </ColComponent>
-            <ColComponent md='12' lg='8' margin='10px 0'>
+            <ColComponent md='12' lg='8'>
               <CardComponent header='Send an Email'>
                 <ContactForm />
               </CardComponent>
