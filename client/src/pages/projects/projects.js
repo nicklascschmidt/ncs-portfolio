@@ -11,21 +11,23 @@ class Projects extends React.Component {
     for (let i=0; i < projectArray.length; i+=2) {
       displayProjectArray.push(
         <Row>
-          <Col xs="12" sm='12' md='12' lg='6' className='mb-2'>
+          <Col lg='6'>
             <CardProjectComponent
+              classNameProp='mb-2'
               title={projectArray[i].title}
-              subTitle={projectArray[i].subTitle}
-              imgSrc={projectArray[i].imgSrc}
+              // subTitle={projectArray[i].subTitle}
+              array={projectArray[i].imgSrcArray}
               projectDescription={projectArray[i].projectDescription}
               projectLink={projectArray[i].projectLink}
               githubLink={projectArray[i].githubLink} />
           </Col>
           {projectArray[i+1] ? 
-          <Col xs="12" sm='12' md='12' lg='6' className='mb-2'>
+          <Col lg='6'>
             <CardProjectComponent
+              classNameProp='mb-2'
               title={projectArray[i+1].title}
-              subTitle={projectArray[i+1].subTitle}
-              imgSrc={projectArray[i+1].imgSrc}
+              // subTitle={projectArray[i+1].subTitle}
+              array={projectArray[i+1].imgSrcArray}
               projectDescription={projectArray[i+1].projectDescription}
               projectLink={projectArray[i+1].projectLink}
               githubLink={projectArray[i+1].githubLink} />

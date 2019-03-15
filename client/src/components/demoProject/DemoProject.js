@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import './featured-project.scss';
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
-import { desktopLinksArray, mobileLinksArray } from './featuredProjectLinks';
-import CarouselComponent from '../../components/carousel/CarouselComponent';
-import { Row, Col } from 'reactstrap';
+import { desktopLinksArray, mobileLinksArray } from '../featuredProject/featuredProjectLinks';
+import CarouselComponent from '../carousel/CarouselComponent';
 
-class FeaturedProjectComponent extends Component {
+class DemoProjectComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -37,4 +35,4 @@ class FeaturedProjectComponent extends Component {
   }
 }
 
-export default FeaturedProjectComponent;
+export default DemoProjectComponent;

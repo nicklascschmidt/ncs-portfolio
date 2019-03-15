@@ -49,9 +49,9 @@ class ContactForm extends React.Component {
         </FormGroup>
         <FormGroup>
           <Label for="formMessage">Message</Label>
-          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. We love your awesome portfolio site and want to hire you asap!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
+          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. We want to hire you asap!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
         </FormGroup>
-        <Button style={{backgroundColor: '#74AA6F', borderColor: '#74AA6F'}} onClick={this.handleSubmit}><strong>Submit*</strong></Button>
+        <Button onClick={this.handleSubmit}>Submit*</Button>
         <FormText color="muted">
           *submit will open external default mail client
         </FormText>

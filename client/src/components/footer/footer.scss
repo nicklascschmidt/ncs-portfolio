@@ -1,0 +1,12 @@
+@import '../../style/variables.scss';
+
+.footer-style {
+  color: $light-text-color;
+  background-color: $nav-color;
+  text-align: right;
+}
+
+.footer-link:hover {
+  color: $light-text-color;
+}
+
