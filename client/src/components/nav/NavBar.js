@@ -8,6 +8,8 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
+  NavbarBrand,
+  NavItem,
 } from 'reactstrap';
 
 class NavBar extends React.Component {
@@ -27,14 +29,23 @@ class NavBar extends React.Component {
   render() {
     return (
       <Navbar expand="sm" className='navbar-style'>
-        <NavLink toLink='/' displayTitle='NCS' brand={true}/>
+        <NavLink toLink='/'>
+          <NavbarBrand><h4>NCS</h4></NavbarBrand>
+        </NavLink>
         <NavbarToggler onClick={this.toggle} className='toggle-icon-container'>
           {this.state.isOpen ? <FaTimes /> : <FaBars />}
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavLink toLink='/projects' displayTitle='Projects' />
-            <NavLink toLink='/resume' displayTitle='Resume' />
+            <NavItem className='mx-2'>
+              <a href='/#contact'>Contact</a>
+            </NavItem>
+            <NavLink toLink='/projects' displayTitle='Projects'>
+              <NavItem>Projects</NavItem>
+            </NavLink>
+            <NavLink toLink='/resume'>
+              <NavItem>Resume</NavItem>
+            </NavLink>
             {/* <ATagCustom href='https://www.dropbox.com/s/c939lo0aeov3exs/NCS_Resume_Feb%202019.docx?dl=0' target='_blank' rel="noopener noreferrer">Resume</ATagCustom> */}
           </Nav>
         </Collapse>

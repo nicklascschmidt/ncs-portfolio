@@ -9,6 +9,11 @@
     h4:hover { color: $link-color; }
   }
   .link-container-style:hover { color: $link-color; }
+  a { color: $nav-font; }
+  a:hover {
+    color: $link-color;
+    text-decoration-line: none;
+  }
 }
 
 .toggle-icon-container {

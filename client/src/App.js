@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
 
 // pages
 import Main from './pages/main';
@@ -19,6 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <ScrollToTop>
         <Background>
           <NavBar />
           <Switch>
@@ -30,6 +32,7 @@ class App extends React.Component {
           </Switch>
           <FooterComponent />
         </Background>
+        </ScrollToTop>
       </Router>
     )
   }

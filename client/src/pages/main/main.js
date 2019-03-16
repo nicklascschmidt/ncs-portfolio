@@ -13,7 +13,6 @@ import AboutMeComponent from '../../components/aboutMe/AboutMe';
 
 
 // TODO: update pix for projects
-// TODO: update quick info section or nix it
 // TODO: update demo project and make vid
 // TODO: update about me content to something better (from c letter?)
 
@@ -40,10 +39,7 @@ class Main extends React.Component {
               </CardComponent>
             </Col>
             <Col lg='5' className='mb-2'>
-              <CardComponent header='Quick Info' align='left' classNameProp='mb-2'>
-                <p>nothing yet</p>
-              </CardComponent>
-              <CardComponent header='Movie Master Demo' align='center' classNameProp='mb-2'>
+              <CardComponent header='Demo: Movie Master' align='center' classNameProp='mb-2'>
                 <DemoProjectComponent />
               </CardComponent>
             </Col>
