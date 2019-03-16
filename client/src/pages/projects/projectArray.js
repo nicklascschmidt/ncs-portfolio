@@ -2,7 +2,7 @@ const projectArray = [
   {
     title:'Movie Master',
     subTitle:'Full stack HTML/CSS/JS/jQuery app with a Node backend and a MySQL database.',
-    imgSrcArray:['https://i.imgur.com/5F3PQ2l.png','https://i.imgur.com/oPuw1Aa.png','https://i.imgur.com/Q7tHguZ.png'],
+    imgSrcArray:['https://i.imgur.com/oPuw1Aa.png','https://i.imgur.com/Q7tHguZ.png','https://i.imgur.com/5F3PQ2l.png'],
     projectDescription:'Users log into an account, then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.',
     projectLink:'https://movie-master-app.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/movie-master'
@@ -10,7 +10,7 @@ const projectArray = [
   {
     title:'Guess the Album',
     subTitle:'Full stack React app with a Node backend.',
-    imgSrcArray:['https://i.imgur.com/jJumsQU.png'],
+    imgSrcArray:['https://i.imgur.com/xUoggq3.png','https://i.imgur.com/fLz50mA.png','https://i.imgur.com/Rtnfat7.png','https://i.imgur.com/KDYBMHT.png'],
     projectDescription:'Music trivia game, where users guess the release date of popular albums, which are scraped from Rolling Stone.',
     projectLink:'https://guess-the-album.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/guess-the-album'
@@ -18,8 +18,8 @@ const projectArray = [
   {
     title:'Portfolio Site (this one!)',
     subTitle:'Full stack React app with a Node backend, launched on AWS.',
-    imgSrcArray:['https://i.imgur.com/lg5PHiJ.png'],
-    projectDescription:'Portfolio site with Homepage, Contact, Projects, and Resume pages.',
+    imgSrcArray:['https://i.imgur.com/5rUMvki.png','https://i.imgur.com/7bwxGM1.png','https://i.imgur.com/VcmzwEr.png','https://i.imgur.com/A3rsUsF.png'],
+    projectDescription:'Mobile responsive portfolio site built with React and hosted on Amazon Web Services.',
     projectLink:'http://www.nicklaschenschmidt.com/',
     githubLink:'https://github.com/nicklascschmidt/ncs-portfolio'
   },

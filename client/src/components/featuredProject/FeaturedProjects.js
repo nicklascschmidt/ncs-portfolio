@@ -15,7 +15,7 @@ class FeaturedProjectsComponent extends Component {
   render() {
     return (
       <Row>
-        {this.state.array.slice(0,3).map( (item, i) => 
+        {this.state.array.slice(1,4).map( (item, i) => 
           <Col lg='4'>
             <CardProjectComponent
               key={`project${i}`}
