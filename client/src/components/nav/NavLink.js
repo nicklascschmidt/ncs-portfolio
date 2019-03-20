@@ -1,6 +1,6 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
-import './nav-styles.scss';
+import './nav-styles.css';
 
 class NavLink extends React.Component {
   render() {

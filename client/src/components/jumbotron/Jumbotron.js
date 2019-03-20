@@ -2,7 +2,7 @@ import React from "react";
 import IconATagComponent from '../icon/icon';
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import { resumeDropboxLink } from '../../pages/resume/resumeSource';
-import './jumbotron.scss';
+import './jumbotron.css';
 
 class JumbotronComponent extends React.Component {
   render() {

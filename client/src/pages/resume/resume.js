@@ -4,7 +4,7 @@ import { Container, Card, CardBody } from 'reactstrap';
 import { FaFileAlt } from "react-icons/fa";
 import IconATagComponent from '../../components/icon/icon';
 import { resumeDropboxLink, resumeImgurLink } from './resumeSource';
-import './resume.scss';
+import './resume.css';
 
 class Resume extends React.Component {
   render() {

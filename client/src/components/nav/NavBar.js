@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
 import { FaBars, FaTimes } from "react-icons/fa";
-import './nav-styles.scss';
+import './nav-styles.css';
 
 import {
   Collapse,
@@ -38,7 +38,7 @@ class NavBar extends React.Component {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className='mx-2'>
-              <a href='/#contact'>Contact</a>
+              <a href='/#contact' className='nav-a-tag-style'>Contact</a>
             </NavItem>
             <NavLink toLink='/projects' displayTitle='Projects'>
               <NavItem>Projects</NavItem>

@@ -1,0 +1,51 @@
+
+:root {
+  --header-text-color: #3F2113;
+  --body-text-color: #1E1E24;
+  --light-text-color: #FFFFFF;
+  --nav-color: #111D4A;
+  --link-color: #788ADA;
+  --jumbotron-color: #e6e6e6;
+  --card-header-color: #D8D4F2;
+  --background-color: #FFFFFF;
+  --hr-color: #788ADA;
+  --nav-font: #FFFFFF;
+}
+
+html, body, #root, .App {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a { color: var(--link-color); }
+a:hover { color: var(--body-text-color); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+.card-style {
+  color: var(--background-color);
+}
+
+p { color: var(--body-text-color); }
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: none;
+  background-color: var(--hr-color);
+}
+
+/* For different sized images on a carousel */
+/* .carousel-item-style {
+  height: 400px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+} */

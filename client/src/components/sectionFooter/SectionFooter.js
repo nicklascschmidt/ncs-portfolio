@@ -1,5 +1,5 @@
 import React from "react";
-import './section-footer.scss';
+import './section-footer.css';
 
 class SectionFooterComponent extends React.Component {
   render() {

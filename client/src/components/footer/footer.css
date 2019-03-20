@@ -1,0 +1,11 @@
+
+.footer-style {
+  color: var(--light-text-color);
+  background-color: var(--nav-color);
+  text-align: right;
+}
+
+.footer-link:hover {
+  color: var(--light-text-color);
+}
+

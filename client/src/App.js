@@ -14,7 +14,7 @@ import Background from './components/background/Background';
 import FooterComponent from './components/footer/Footer';
 
 // style
-import './style/App.scss';
+import './style/App.css';
 
 class App extends React.Component {
   render() {

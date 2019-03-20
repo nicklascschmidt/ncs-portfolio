@@ -12,12 +12,23 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Testing version
 // Serve static assets in production
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, 'client/build')));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, 'client/build')));
+//   app.get('/', (req,res) => {
+//     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+//   });
+// }
 
-app.use(routes);
+// Working production version
+app.use(express.static('client/build'));
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
+
+// Working dev version
+// app.use(routes);
 
 // Start server
 app.listen(PORT, function() {

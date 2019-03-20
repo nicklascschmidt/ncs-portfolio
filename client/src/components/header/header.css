@@ -1,0 +1,15 @@
+
+
+.header-style {
+  background-color: var(--jumbotron-color);
+  box-shadow: 0px 1px 3px 0px var(--jumbotron-color);
+  text-align: center;
+}
+
+.hr-header { display: inline-block; }
+.hr-header:after {
+  content: '';
+  display: block;
+  border-top: 2px solid var(--hr-color);
+  margin-top: 0.5rem;
+}
