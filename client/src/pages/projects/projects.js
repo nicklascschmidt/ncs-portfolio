@@ -11,7 +11,7 @@ class Projects extends React.Component {
     for (let i=0; i < projectArray.length; i+=2) {
       displayProjectArray.push(
         <Row>
-          <Col lg='6'>
+          <Col lg='6' className='mb-2'>
             <CardProjectComponent
               title={projectArray[i].title}
               array={projectArray[i].imgSrcArray}
@@ -21,7 +21,7 @@ class Projects extends React.Component {
             />
           </Col>
           {projectArray[i+1] &&
-          <Col lg='6'>
+          <Col lg='6' className='mb-2'>
             <CardProjectComponent
               title={projectArray[i+1].title}
               array={projectArray[i+1].imgSrcArray}

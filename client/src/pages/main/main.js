@@ -14,8 +14,6 @@ import ContactForm from '../../components/contact/ContactForm';
 
 
 // TODO: update pix for projects
-// TODO: update demo project and make vid
-// TODO: update about me content to something better (from c letter?)
 
 class Main extends React.Component {
   constructor(props) {
