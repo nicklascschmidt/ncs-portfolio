@@ -56,7 +56,7 @@ class ContactForm extends React.Component {
           </Col>
         </FormGroup>
         <FormGroup className='text-left'>
-          <Button className='mx-auto' onClick={this.handleSubmit}>Submit*</Button>
+          <Button onClick={this.handleSubmit}>Submit*</Button>
           <Label className='m-2'><FormText color="muted">*submit will open external default mail client</FormText></Label>
         </FormGroup>
       </Form>

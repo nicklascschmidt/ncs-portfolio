@@ -30,7 +30,7 @@ const projectArray = [
     title:'ThreadAuction',
     subTitle:'Full stack React app with a Node backend and MySQL DB.',
     imgSrcArray:['https://i.imgur.com/Eme9QgV.png'],
-    projectDescription:'Ecommerce auction site and user authentication. Products are displayed onsite with product details and auction information. Auctions expire one week after posting.',
+    projectDescription:'Ecommerce auction site, where users login and browse auction listings, which expire one week after posting.',
     projectLink:'https://threadauction.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/threadauction',
     techUsed:['React', 'Redux', 'JavaScript', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'HTML', 'CSS', 'Axios', 'moment.js', 'react-router-dom', 'styled-components', 'sequelize-transforms']

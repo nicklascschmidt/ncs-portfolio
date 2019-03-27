@@ -21,9 +21,6 @@ class CarouselComponent extends React.Component {
   }
 
   render() {
-    // For carousels with different sized images
-    // this.state.linkArray.map( (link,i) => <div key={`carouselImage${i}`} className='carousel-item-style' style={{backgroundImage:`url(${link})`}}></div>);
-  
     return (
       <Carousel showIndicators={false} infiniteLoop={true} showThumbs={false}>
         {this.state.linkArray.map( (link,i) => <img key={`carouselImage${i}`} src={link} alt={`picture${i+1}`} style={imgStyle}/>)}
