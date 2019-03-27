@@ -42,6 +42,10 @@ hr {
   background-color: var(--hr-color);
 }
 
+.card-height-fix {
+  height: 100%;
+}
+
 /* For different sized images on a carousel */
 /* .carousel-item-style {
   height: 400px;

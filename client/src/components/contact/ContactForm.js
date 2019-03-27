@@ -49,7 +49,7 @@ class ContactForm extends React.Component {
         </FormGroup>
         <FormGroup>
           <Label for="formMessage">Message</Label>
-          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. We want to hire you asap!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
+          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. You rock and we want to hire you!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
         </FormGroup>
         <Button onClick={this.handleSubmit}>Submit*</Button>
         <FormText color="muted">

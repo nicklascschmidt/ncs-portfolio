@@ -6,10 +6,11 @@ import ProfileImageComponent from '../../components/img/profile-image';
 import DemoProjectComponent from '../../components/demoProject/DemoProject';
 import HeaderComponent from '../../components/header/Header';
 import FeaturedProjectsComponent from '../../components/featuredProject/FeaturedProjects';
-import ContactComponent from '../../components/contact/Contact';
 import SectionFooterComponent from '../../components/sectionFooter/SectionFooter';
 import { LinkContainer } from 'react-router-bootstrap';
 import AboutMeComponent from '../../components/aboutMe/AboutMe';
+import ContactInfo from '../../components/contact/ContactInfo';
+import ContactForm from '../../components/contact/ContactForm';
 
 
 // TODO: update pix for projects
@@ -33,20 +34,21 @@ class Main extends React.Component {
         </JumbotronComponent>
         <Container>
           <Row>
-            <Col lg='7' className='mb-2'>
-              <CardComponent header='About' classNameProp='mb-2'>
+            <Col lg='8' className='mb-3'>
+              <CardComponent header='About'>
                 <AboutMeComponent />
               </CardComponent>
             </Col>
-            <Col lg='5' className='mb-2'>
-              <CardComponent header='Demo: Movie Master' align='center' classNameProp='mb-2'>
-                <DemoProjectComponent />
+            <Col lg='4' className='mb-3'>
+              <CardComponent header='Contact Info' classNameProp='card-height-fix'>
+                <ContactInfo />
               </CardComponent>
             </Col>
           </Row>
         </Container>
         <HeaderComponent title='Featured Projects' id='main-projects'/>
         <Container>
+          <DemoProjectComponent />
           <FeaturedProjectsComponent />
           <SectionFooterComponent>
             <LinkContainer to='/projects'>
@@ -56,7 +58,9 @@ class Main extends React.Component {
         </Container>
         <HeaderComponent title='Contact' id='contact'/>
         <Container>
-          <ContactComponent />
+          <CardComponent header='Send an Email'>
+            <ContactForm />
+          </CardComponent>
         </Container>
       </div>
     );

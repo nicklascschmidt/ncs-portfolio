@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import CardProjectComponent from '../cards/CardProject';
-import { projectArray } from '../../pages/projects/projectArray';
+import projectArray from '../../pages/projects/projectArray';
 
 class FeaturedProjectsComponent extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      array: projectArray
+      array: projectArray.slice(1,4)
     };
   }
 
   render() {
     return (
-      <Row>
-        {this.state.array.slice(1,4).map( (item, i) => 
-          <Col lg='4'>
+      <Row className='mb-2'>
+        {this.state.array.map( (item, i) => 
+          <Col lg='4' className='mb-2'>
             <CardProjectComponent
               key={`project${i}`}
-              classNameProp='mb-2'
               title={item.title}
-              // subTitle={item.subTitle}
               array={item.imgSrcArray}
               projectDescription={item.projectDescription}
               projectLink={item.projectLink}
-              githubLink={item.githubLink} />
+              githubLink={item.githubLink}
+              techUsed={item.techUsed && item.techUsed.join(', ')}
+            />
           </Col>
         )}
       </Row>

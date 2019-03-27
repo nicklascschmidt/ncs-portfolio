@@ -1,19 +1,21 @@
 const projectArray = [
   {
     title:'Movie Master',
-    subTitle:'Full stack HTML/CSS/JS/jQuery app with a Node backend and a MySQL database.',
+    videoSrcDesktop:'https://media.giphy.com/media/cmzloTmkpcSfk4Aeuf/giphy.gif',
+    videoSrcMobile:'https://media.giphy.com/media/1oDucHBAhiGZuPCzDn/giphy.gif',
     imgSrcArray:['https://i.imgur.com/oPuw1Aa.png','https://i.imgur.com/Q7tHguZ.png','https://i.imgur.com/5F3PQ2l.png'],
-    projectDescription:'Users log into an account, then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.',
+    projectDescription:'Movie watchlist tracker web app, where users log in then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.',
     projectLink:'https://movie-master-app.herokuapp.com/',
-    githubLink:'https://github.com/nicklascschmidt/movie-master'
+    githubLink:'https://github.com/nicklascschmidt/movie-master',
+    techUsed:['JavaScript', 'jQuery', 'HTML', 'CSS', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'Axios', 'Cheerio', 'Ajax']
   },
   {
     title:'Guess the Album',
-    subTitle:'Full stack React app with a Node backend.',
     imgSrcArray:['https://i.imgur.com/xUoggq3.png','https://i.imgur.com/fLz50mA.png','https://i.imgur.com/Rtnfat7.png','https://i.imgur.com/KDYBMHT.png'],
     projectDescription:'Music trivia game, where users guess the release date of popular albums, which are scraped from Rolling Stone.',
     projectLink:'https://guess-the-album.herokuapp.com/',
-    githubLink:'https://github.com/nicklascschmidt/guess-the-album'
+    githubLink:'https://github.com/nicklascschmidt/guess-the-album',
+    techUsed:['React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'Axios', 'Cheerio', 'react-router-dom', 'reactstrap', 'styled-components']
   },
   {
     title:'Portfolio Site (this one!)',
@@ -21,15 +23,17 @@ const projectArray = [
     imgSrcArray:['https://i.imgur.com/5rUMvki.png','https://i.imgur.com/7bwxGM1.png','https://i.imgur.com/VcmzwEr.png','https://i.imgur.com/A3rsUsF.png'],
     projectDescription:'Mobile responsive portfolio site built with React and hosted on Amazon Web Services.',
     projectLink:'http://www.nicklaschenschmidt.com/',
-    githubLink:'https://github.com/nicklascschmidt/ncs-portfolio'
+    githubLink:'https://github.com/nicklascschmidt/ncs-portfolio',
+    techUsed:['AWS (EBS)','React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'react-router-dom', 'reactstrap']
   },
   {
     title:'ThreadAuction',
     subTitle:'Full stack React app with a Node backend and MySQL DB.',
     imgSrcArray:['https://i.imgur.com/Eme9QgV.png'],
-    projectDescription:'Ecommerce site with an auction system and user authentication. Products are displayed onsite with product details and auction information. Auctions expire one week after posting.',
+    projectDescription:'Ecommerce auction site and user authentication. Products are displayed onsite with product details and auction information. Auctions expire one week after posting.',
     projectLink:'https://threadauction.herokuapp.com/',
-    githubLink:'https://github.com/nicklascschmidt/threadauction'
+    githubLink:'https://github.com/nicklascschmidt/threadauction',
+    techUsed:['React', 'Redux', 'JavaScript', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'HTML', 'CSS', 'Axios', 'moment.js', 'react-router-dom', 'styled-components', 'sequelize-transforms']
   },
   {
     title:'Parks and Rec Clicky Game',
@@ -89,4 +93,4 @@ const projectArray = [
   }
 ];
 
-export { projectArray };
+export default projectArray;
