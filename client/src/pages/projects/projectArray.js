@@ -20,7 +20,7 @@ const projectArray = [
   {
     title:'Portfolio Site (this one!)',
     subTitle:'Full stack React app with a Node backend, launched on AWS.',
-    imgSrcArray:['https://i.imgur.com/5rUMvki.png','https://i.imgur.com/7bwxGM1.png','https://i.imgur.com/VcmzwEr.png','https://i.imgur.com/A3rsUsF.png'],
+    imgSrcArray:['https://i.imgur.com/QU3aC0S.png','https://i.imgur.com/CpIl68T.png','https://i.imgur.com/7pWlq8d.png','https://i.imgur.com/lFgcUsv.png','https://i.imgur.com/oNo3o8x.png'],
     projectDescription:'Mobile responsive portfolio site built with React and hosted on Amazon Web Services.',
     projectLink:'http://www.nicklaschenschmidt.com/',
     githubLink:'https://github.com/nicklascschmidt/ncs-portfolio',
@@ -29,7 +29,7 @@ const projectArray = [
   {
     title:'ThreadAuction',
     subTitle:'Full stack React app with a Node backend and MySQL DB.',
-    imgSrcArray:['https://i.imgur.com/Eme9QgV.png'],
+    imgSrcArray:['https://i.imgur.com/TRfGL5p.png','https://i.imgur.com/VfyreG2.png','https://i.imgur.com/vL2uQKv.png','https://i.imgur.com/wxYbl3Z.png'],
     projectDescription:'Ecommerce auction site, where users login and browse auction listings, which expire one week after posting.',
     projectLink:'https://threadauction.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/threadauction',
