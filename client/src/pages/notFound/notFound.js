@@ -1,12 +1,11 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 
 class NotFound extends React.Component {
   render() {
     return (
-      <Container>
+      <div style={{minHeight:'80vh'}}>
         <h2 className='text-center mt-3'>Sorry, this page doesn't exist.</h2>
-      </Container>
+      </div>
     )
   }
 }
