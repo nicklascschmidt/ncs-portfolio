@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText, Col } from 'reactstrap';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -43,18 +43,22 @@ class ContactForm extends React.Component {
   render() {
     return (
       <Form>
-        <FormGroup>
-          <Label for="formSubject">Subject</Label>
-          <Input type="text" name="submitterSubject" id="formSubject" placeholder="ex. Interview Scheduling" value={this.state.submitterSubject} onChange={event => this.handleChange(event)} />
+        <FormGroup row>
+          <Label for="formSubject" sm='3' md='2'>Subject</Label>
+          <Col sm='9' md='10'>
+            <Input type="text" name="submitterSubject" id="formSubject" placeholder="ex. Interview Scheduling" value={this.state.submitterSubject} onChange={event => this.handleChange(event)} />
+          </Col>
         </FormGroup>
-        <FormGroup>
-          <Label for="formMessage">Message</Label>
-          <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. You rock and we want to hire you!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
+        <FormGroup row>
+          <Label for="formMessage" sm='3' md='2'>Message</Label>
+          <Col sm='9' md='10'>
+            <Input type="textarea" name="submitterMessage" id="formMessage" placeholder="ex. You rock and we want to hire you!" value={this.state.submitterMessage} onChange={event => this.handleChange(event)} />
+          </Col>
         </FormGroup>
-        <Button onClick={this.handleSubmit}>Submit*</Button>
-        <FormText color="muted">
-          *submit will open external default mail client
-        </FormText>
+        <FormGroup className='text-left'>
+          <Button className='mx-auto' onClick={this.handleSubmit}>Submit*</Button>
+          <Label className='m-2'><FormText color="muted">*submit will open external default mail client</FormText></Label>
+        </FormGroup>
       </Form>
     );
   }
